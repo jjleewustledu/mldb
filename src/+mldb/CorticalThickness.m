@@ -40,7 +40,7 @@ classdef CorticalThickness
         function cts  = getCorticalThickness(~, subjsdir, subjid)
             %% GETCORTICALTHICKNESS returns L/R pair as 2-vector
             cd(subjsdir);
-            cts = mlsurfer.SurferData.processMcaThickAvg(subjsdir, subjid);
+            cts = mlsurfer.EarlySurferData.processMcaThickAvg(subjsdir, subjid);
         end 
         
  		function this = CorticalThickness 
