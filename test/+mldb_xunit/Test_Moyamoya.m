@@ -32,13 +32,13 @@ classdef Test_Moyamoya < TestCase
             sd = fullfile(this.studyDir, dt.fqdns{1});
         end
         function sd = get.studyDir(this) %#ok<MANU>
-            sd = fullfile(getenv('HOME'), 'Local/src/mlcvl/mlfourd/test/np755', '');
+            sd = fullfile(getenv('HOME'), 'MATLAB-Drive/mlfourd/test/np755', '');
         end
         function id = get.testId(this) %#ok<MANU>
             id = 'mm05-001_p7730';
         end
         function x  = get.xlsx(this) %#ok<MANU>
-            x = fullfile(getenv('HOME'), 'Local/src/mlcvl/mldb/test', 'excelTestsheet.xlsx');
+            x = fullfile(getenv('HOME'), 'MATLAB-Drive/mldb/test', 'excelTestsheet.xlsx');
         end
     end
     

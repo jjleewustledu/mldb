@@ -41,7 +41,7 @@ classdef Test_Excel < TestCase
         end
  		function this = Test_Excel(varargin) 
  			this = this@TestCase(varargin{:});
-            this.testsheet = fullfile(getenv('HOME'), 'Local/src/mlcvl/mldb/test', 'excelTestsheet.xlsx');
+            this.testsheet = fullfile(getenv('HOME'), 'MATLAB-Drive/mldb/test', 'excelTestsheet.xlsx');
             this.excelObj = mldb.Excel.readall(this.testsheet);
         end % ctor 
  	end 
