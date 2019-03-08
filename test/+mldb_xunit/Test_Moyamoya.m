@@ -17,7 +17,7 @@ classdef Test_Moyamoya < TestCase
 
 	properties (Dependent)
         moyamoyaObj
-        sessionDir
+        sessionPath
         studyDir
         testId
         xlsx
@@ -26,7 +26,7 @@ classdef Test_Moyamoya < TestCase
     end
 
     methods %% set/get
-        function sd = get.sessionDir(this)
+        function sd = get.sessionPath(this)
             dt = mlsystem.DirTool(fullfile(this.studyDir, [this.testId '*']));
             assert(1 == length(dt.fqdns));
             sd = fullfile(this.studyDir, dt.fqdns{1});
